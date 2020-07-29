@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 68px;
+    background-color: #523468;
+}
+
+.menutopo{
+    height: 121px;
+}
+.menutopointerno{
+    width: 895px;
+    margin: auto;
+    height: 121px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+.menuInterno{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.menuInterno, nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.menuInterno li {
+    font-size: 16px;
+    font-family: monospace;
+    color: #fff;
+   
+  
+}
+
+.menuInterno nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+
+.menuInterno nav li a:hover {
+    background-color: #422a53;
+}
+
+
+.menuInterno nav li a.ativo {
+    background-color: #422a53;
+}
+
+
+.menuInterno{
+    width: 895px;
+    height: 68px;
+    margin: auto;
+}
+
+.cards{
+   
+    width: 895px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.titulo{
+    margin-top: 53px;
+    height: 68px;
+    width: 895px;
+    margin: auto;
+    text-align: initial;
+    display: grid;
+    align-items: center;
+}
+
+.card{
+    margin-top: 65px;
+    width: 199px;
+    height: 299px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+}
+
+.containerPesquisa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.containerPesquisa input{
+    margin-top: -30px;
+    width: 280px;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+    
+}
+
+
+.descricao{
+    width: 169px;
+    height: 3px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.descricao h6{
+    color: #d73a1e;
+}
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    display: none;
+    
+
+}
+
+.modalInterno{
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    animation-name: up;
+    animation-duration: 0.5s;
+    z-index: 999;
+}
+
+.modalInterno h6{
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+
+@keyframes up{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+
+
+    }
+}
+
+@keyframes close{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(100px);
+
+
+
+    }
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    min-height: 400px;
+}
+.containerImg{
+    display: grid;
+    align-items: center;
+}
+.containerImg img {
+    width: 100%;
+
+}
+
+.containerDes{
+    
+    text-align: initial;
+}
+.containerDes h4{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.item{
+    margin: 30px;
+}
+.item p {
+    color: #d73a1e;
+}
+li{
+    list-style: none;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.item button{
+    background-color: #d73a1e;
+    border: none;
+    color: white;
+    padding: 4px 22px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+footer{
+    height: 275px;
+    background-color: #e6e6e6;
+}
+
+.containerFoo{
+    width: 895px;
+    height: 275px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+   
+}
+
+.formI{
+    position: relative;
+    
+}
+
+form{
+    position: absolute;
+    right: -69px;
+    top: 30px;
+    background-color: #fff;
+    width: 429px;
+    height: 178px;
+    border-radius: 5px;
+    padding: 27px 36px;
+    z-index: 1;
+}
+
+label{
+    display: block;
+    margin-top: 35px;
+}
+
+label:nth-child(2){
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form input[type="text"]{
+    margin-top: -30px;
+    width: 249px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+}
+form input[type="button"]{
+    margin-top: -30px;
+    width: 111px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #d73a1e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
